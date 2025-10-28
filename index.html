@@ -11,6 +11,65 @@
       font-family: Calibri, Arial, sans-serif;
       margin: 40px;
     }
+
+.intro-figure {
+  float: right;
+  margin: 40px 0 8px 16px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.intro-figure img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.intro-figure figcaption {
+  font-size: 0.85em;
+  color: #333;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .intro-figure {
+    float: none;
+    max-width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+  
+    .intro-centered { display:block; margin:8px auto; max-width:40%; }
+    .intro-centered img { display:block; width:100%; height:auto; }
+    
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 8px; 
+      align-items: start;
+      margin-bottom: 4px;
+    }
+
+    .intro-center { display:flex; align-items:center; justify-content:center; }
+    
+    .intro-centered { display:block; margin:6px auto; max-width:36%; }
+    .intro-centered figcaption {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 0.95em;
+      color: #333;
+      margin-top: 6px;
+      line-height: 1.2;
+    }
+    @media (max-width: 900px) {
+      .intro-grid { display: block; }
+      .intro-left, .intro-right { margin-bottom: 8px; }
+      .intro-centered { max-width: 60%; margin: 6px auto; }
+    }
     table {
       font-family: Arial, sans-serif;
       border-collapse: collapse;
@@ -29,7 +88,189 @@
     }
     .mySlide {
       display: none;
+  </style>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircraft Gallery</title>
+
+  <style>
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap; 
+      margin-top: 20px;
     }
+
+    .image-row figure {
+      text-align: center;
+      width: 200px; 
+      margin: 0;
+    }
+
+    .image-row img {
+      width: 100%; 
+      height: auto; 
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #333;
+      margin-top: 6px;
+    }
+    .image-row-figure {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+}
+
+.image-row-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.image-row-figure figcaption {
+  font-size: 0.85em;
+  color: #333;
+  margin-top: 6px;
+}
+
+.group-caption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 10px;
+  max-width: calc(250px * 3 + 20px * 2); 
+}
+
+.large-figure img {
+  width: 100%;     
+  max-width: 600px;  
+}
+
+@media (max-width: 700px) {
+  .large-figure img {
+    width: 100%;   
+  }
+}
+
+.large-figure {
+  margin-top: 57px; 
+}
+
+.large-figure-I {
+  float: right !important;
+  clear: right;                
+  margin: 60px 0 8px 16px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.large-figure-I img {
+  display: block;               
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.large-figure-I figcaption {
+  font-size: 0.85em;
+  color: #333;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .large-figure-I {
+    float: none !important;
+    max-width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+.large-figure-II {
+  float: right !important;
+  clear: right;                
+  margin: 40px 0 8px 16px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.large-figure-II img {
+  display: block;               
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.large-figure-II figcaption {
+  text-align: center;
+  font-size: 0.85em;
+  color: #333;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .large-figure-II {
+    float: none !important;
+    max-width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+.figure-M {
+  float: center !important;
+  clear: center;                
+  margin: 40px 0 8px 16px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.figure-M img {
+  display: block;               
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.figure-M figcaption {
+  text-align: center;
+  font-size: 0.85em;
+  color: #333;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .figure-M {
+    float: none !important;
+    max-width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+.figure-M {
+  display: block;
+  margin: 20px auto; 
+  max-width: 30%;
+  text-align: center;
+}
   </style>
 </head>
 <body>
@@ -59,18 +300,21 @@
 
   <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
-   The Lockheed SR-71 Blackbird is the pinnacle of aerospace engineering, flying at over Mach 3 and 80,000 feet in the Cold War era. It was built by Kelly Johnson's Skunk Works, and its flight performance was based on a balance of aerodynamic precision, high-quality materials, and engine technology. The delta wings, chined fuselage, and titanium construction of the SR-71 minimized drag and resisted ultra-high heat, while Pratt & Whitney J58 engines operated as turbojet ramjets to generate thrust at speeds unprecedented. Apart from its role as a spy plane, the SR-71 demonstrated how technology and precision could transcend aerodynamic and heat limitations, putting its name along the greatest technological innovations in aviation history.
+   The Lockheed SR-71 Blackbird is the pinnacle of aerospace engineering, flying at over Mach 3 and 80,000 feet in the Cold War era. It was built by Kelly Johnson's Skunk Works, and its flight performance was based on a balance of aerodynamic precision, high-quality materials, and engine technology. The delta wings, chined fuselage, and titanium construction of the SR-71 minimized drag and resisted ultra-high heat, while Pratt & Whitney J58 engines operated as turbojet ramjets to generate thrust at speeds unprecedented. Apart from its role as a spy plane, the SR-71 demonstrated how technology and precision could transcend aerodynamic and heat limitations, putting its name among the greatest technological innovations in aviation history.
   </p>
+  <figure class="intro-figure" aria-hidden="false">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lockheed_SR-71_Blackbird.jpg/330px-Lockheed_SR-71_Blackbird.jpg" alt="SR-71 Blackbird">
+  <figcaption>Figure 1: SR-71 flying over the Sierra Nevada mountains in 1994 (By USAF / Judson Brohmer)</figcaption>
+</figure>
   <hr>
 
   <h3 id="Introduction">Introduction</h3>
-  <p class="ex1">
-    In the early 1960s, the quest for speed reached its peak: building an airplane with a cruise capability above Mach 3. The Lockheed SR-71 Blackbird, born in Kelly Johnson's Skunk Works, did what no jet has ever matched, flying quicker than a bullet at over 80,000 feet for hours on end. Its secret was not brute strength but aerodynamic sophistication. Every curve and contour was designed to master the turbulent Mach 3 air. With its slim fuselage, delta wings that were swept, and forward chines, the SR-71 turned air drag into lift and stealth, and proved that aerodynamic design could take drag and turn it into speed.
+  <p class="ex1">In the early 1960s, the quest for speed reached its peak: building an airplane with a cruise capability above Mach 3. The Lockheed SR-71 Blackbird(Figure 1), born in Kelly Johnson's Skunk Works, did what no jet has ever matched, flying quicker than a bullet at over 80,000 feet for hours on end. Its secret was not brute strength but aerodynamic sophistication. Every curve and contour was designed to master the turbulent Mach 3 air. With its slim fuselage, delta wings that were swept, and forward chines, the SR-71 turned air drag into lift and stealth, and proved that aerodynamic design could take drag and turn it into speed.
   </p>
   <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrance</li>
+      <li>(Figure 1) - Wikipedia Contributors (2019). Lockheed SR-71 Blackbird. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird.</li>
     </ul>
   </details>
   <hr>
@@ -82,62 +326,99 @@
   <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrence</li>
+      <li>(Lockheed Martin, n.d)Lockheed Martin (2018). Creating the Blackbird. [online] Lockheed Martin. Available at: https://www.lockheedmartin.com/en-us/news/features/history/blackbird.html.</li>
     </ul>
   </details>
   <hr>
 
   <h3 id="From OXCART to the Blackbird">From OXCART to the Blackbird</h3>
   <p class="ex1">
-     Under Project OXCART of the CIA, Lockheed started work on the A-12 in 1959 the SR-71's direct predecessor. With every prototype, the airframe's shape and structure became tighter to reduce drag and radar cross-section. This led to the design of twin engine pods, lengthy body, and distinctive chines fusing the wing and fuselage of the Blackbird's characteristic look.(Lockheed Martin, n.d : NASA Facts FS-2000-03-030)<br><br>
-     The Air Force's SR-71 evolved from the interceptor YF-12 and A-12, built with long-range reconnaissance and advanced sensors. Its airframe merged aerodynamics with materials adequate to sustain flight Mach 3, a configuration no operational aircraft had yet attained.(NASA, 2009)
+     Under Project OXCART of the CIA, Lockheed started work on the A-12(Figure 2) in 1959 the SR-71's direct predecessor. With every prototype, the airframe's shape and structure became tighter to reduce drag and radar cross-section. This led to the design of twin engine pods, lengthy body, and distinctive chines fusing the wing and fuselage of the Blackbird's characteristic look.(Lockheed Martin, n.d : NASA Facts FS-2000-03-030)<br><br>
+     The Air Force's SR-71(Figure 4) evolved from the interceptor YF-12(Figure 3) and A-12, built with long-range reconnaissance and advanced sensors. Its airframe merged aerodynamics with materials adequate to sustain flight Mach 3, a configuration no operational aircraft had yet attained.(NASA, 2009)
   </p>
+   <div class="image-row">
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/A12-flying.jpg" alt="SR-71 Blackbird">
+      <figcaption>(Figure 2)</figcaption>
+    </figure>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/YF-12A.jpg" alt="F-117 Nighthawk">
+      <figcaption>(Figure 3) </figcaption>
+    </figure>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lockheed_SR-71_Blackbird.jpg/1200px-Lockheed_SR-71_Blackbird.jpg" alt="B-2 Spirit">
+      <figcaption>(Figure 4)</figcaption>
+    </figure>
+  <p class="group-caption">
+  Figure 2–4: Development lineage of the SR-71 Blackbird — from the CIA’s A-12 (Project OXCART) to the YF-12 interceptor, and finally the Air Force’s SR-71.
+</p>
+</div>
+<figure class="intro-figure large-figure" aria-hidden="false">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sr-71-composit.gif/500px-Sr-71-composit.gif" alt="SR-71 Blackbird">
+  <figcaption>Figure 5: SR-71 with the aerodynamic features annotated</figcaption>
+</figure>
     <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrence</li>
+      <li>(Lockheed Martin, n.d)Lockheed Martin (2018). Creating the Blackbird. [online] Lockheed Martin. Available at: https://www.lockheedmartin.com/en-us/news/features/history/blackbird.html.</li>
+      <li>(NASA Facts)NASA Facts (2000). SR-71 Blackbird. [online] Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf.</li>
+      <li>(NASA)Merlin, P. (2009). Design and Development of the Blackbird: Challenges and Lessons Learned. [online] Available at: https://ntrs.nasa.gov/api/citations/20090007797/downloads/20090007797.pdf.</li>
+      <li>(Figure 2) - Wikipedia. (2020). Lockheed A-12. [online] Available at: https://en.wikipedia.org/wiki/Lockheed_A-12.</li>
+      <li>(Figure 3) - Wikipedia. (2023). Lockheed YF-12. [online] Available at: https://en.wikipedia.org/wiki/Lockheed_YF-12.</li>
+      <li>(Figure 4) - Wikipedia Contributors (2019). Lockheed SR-71 Blackbird. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird.</li>
     </ul>
   </details>
   <hr>
 
   <h3 id="Aerodynamic Design">Aerodynamic Design</h3>
   <p class="ex1">
-   Every curve of the SR-71 was managed by high Mach aerodynamics. The extensively swept delta wings were to minimize drag and stability in the thin stratosphere. The chines on the fuselage knife edge extensions on the forward body generated extra lift and improved directional stability, decreasing general wing loading by almost 20 percent.(NASA Facts FS-2000-03-030)<br><br>
-   The most distinctive feature was the variable geometry inlet system. Behind each J58 engine was a conical movable spike that traveled 26 inches with a change in velocity, controlling shock wave patterns and slowing the flow before it reached the compressor. At Mach 3, about 54 percent of total thrust wasn't produced by the turbojet core but by compression within the inlet itself.(NASA Facts FS-2000-03-030)<br><br>
-   Effectively, what SR-71 lacked was being an aerodynamically streamlined aircraft with its fuselage, wings, and engine a single flow path.  
+   Every curve of the SR-71 was managed by high Mach aerodynamics. The extensively swept delta wings were to minimize drag and stability in the thin stratosphere. The chines(Figure 5) on the fuselage knife edge extensions on the forward body generated extra lift and improved directional stability, decreasing general wing loading by almost 20 percent.(NASA Facts FS-2000-03-030)<br><br>
+   The most distinctive feature was the variable geometry inlet system. Behind each J58 engine was a conical movable spike(Figure 5) that traveled 26 inches with a change in velocity, controlling shock wave patterns and slowing the flow before it reached the compressor. At Mach 3, about 54 percent of total thrust wasn't produced by the turbojet core but by compression within the inlet itself.(NASA Facts FS-2000-03-030)
   </p>
+  <figure class="large-figure-I" aria-hidden="false">
+  <img src="https://wisconsinmetaltech.com/wp-content/uploads/2020/06/titanium-used-in-sr-71-cost-diagram.jpg" alt="SR-71 Blackbird">
+  <figcaption>Figure 6: Shows the strength of materials compared to the Density</figcaption>
+</figure>
   <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrance</li>
+      <li>(NASA Facts)NASA Facts (2000). SR-71 Blackbird. [online] Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf.</li>
+      <li>(Figure 5) - Wikipedia Contributors (2019). Lockheed SR-71 Blackbird. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird.</li>
     </ul>
   </details>
   <hr>
 
   <h3 id="Materials and Structure">Materials and Structure</h3>
   <p class="ex1">
-   A speed of Mach 3 generated skin temperatures of more than 500 °C too hot for aluminum. Lockheed therefore built more than 90 percent of the airframe of titanium alloys, creating one of the first mass-produced aviation titanium structures.(Lockheed Martin, n.d)<br><br>
+   A speed of Mach 3 generated skin temperatures of more than 500 °C too hot for aluminum. Lockheed therefore built more than 90 percent of the airframe of titanium alloys(Figure 6), creating one of the first mass-produced aviation titanium structures.(Lockheed Martin, n.d)<br><br>
    Titanium processing was notoriously difficult. It became brittle if exposed to shop equipment in the presence of contaminants, so new welding and cutting techniques were required to be developed by Lockheed. Even the purchase of the material was classified since the Soviet Union was the world leader in its provision, and titanium was thus obtained through third-party sources.<br><br>
    Thermal expansion made the SR-71 physically enlarge a couple of centimeters when airborne. Fuel leaked through altitude seams on the ground, the stretched, hot skin closing. Panel corrugation provided extra structure to curve without fracturing and the black iron oxide layer of the aircraft to dissipate heat away and slightly reduce radar signature.(Lockheed Martin, n.d : NASA Facts FS-2000-03-030)
   </p>
+   <figure class="large-figure-II" aria-hidden="false">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/SR71_J58_Engine_Airflow_Patterns.svg" alt="SR-71 Blackbird">
+  <figcaption>Figure 7: Shows how the engine works at different speeds</figcaption>
+</figure>
     <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrance</li>
+      <li>(Lockheed Martin, n.d)Lockheed Martin (2018). Creating the Blackbird. [online] Lockheed Martin. Available at: https://www.lockheedmartin.com/en-us/news/features/history/blackbird.html.</li>
+      <li>(NASA Facts)NASA Facts (2000). SR-71 Blackbird. [online] Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf.</li>
+      <li>(Figure 6) - wisconsinmetaltech.com. (n.d.). Titanium and the SR-71 | a Full Guide to an Amazing Combination. [online] Available at: https://wisconsinmetaltech.com/titanium-and-the-sr-71/.</li>
     </ul>
   </details>
   <hr>
 
   <h3 id="Propulsion: The J58 Engine">Propulsion: The J58 Engine</h3>
   <p class="ex1">
-   Around which the Blackbird's flight was enabled was the Pratt & Whitney J58 (JT11D-20) engine, a bit of a hybrid turbojet and ramjet. Below subsonic speeds it was a standard afterburning turbojet, but above Mach 2 the majority of the air was bypassed around the compressor through six external ducts and burned with fuel in the afterburner. This yielded efficient high speed thrust while providing steady combustion.(Engine History Society, 2013 : J58 Genesis, 1964)<br><br>
-   Cruise generated just 20 percent of the power from the central engine; the rest from compression in the intake and afterburning of bypass flow.(J58 Genesis, 1964)Bleed doors and the inlet spike were controlled automatically to keep internal shock in precisely the correct location; if this was disrupted, an "unstart" would wrack the aircraft violently about.(Engine History Soicety, 2013)<br><br>
+   Around which the Blackbird's flight was enabled was the Pratt & Whitney J58 (JT11D-20) engine, a bit of a hybrid turbojet and ramjet. Below subsonic speeds it was a standard afterburning turbojet, but above Mach 2 the majority of the air was bypassed around the compressor through six external ducts(Figure 7) and burned with fuel in the afterburner. This yielded efficient high speed thrust while providing steady combustion.(Engine History Society, 2013 : J58 Genesis, 1964)<br><br>
+   Cruise generated just 20 percent of the power from the central engine; the rest from compression in the intake and afterburning of bypass flow.(J58 Genesis, 1964)Bleed doors and the inlet spike were controlled automatically(Figure 7) to keep internal shock in precisely the correct location; if this was disrupted, an "unstart" would wrack the aircraft violently about.(Engine History Society, 2013)<br><br>
    The J58 was fueled by JP-7, a heat-resistant fuel that also cooled avionics, hydraulics, and flight systems before being fueled into the afterburner. It was initiated by triethylborane (TEB), a pyrophoric chemical which, when burned, produced a bright green flash.(Engine History Society, 2013)
   </p>
       <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrance</li>
+      <li>(Engine History Society)Enginehistory.org. (2013). Available at: https://www.enginehistory.org/Convention/2013/SR-71Propul/SR-71Propul.shtml.</li>
+      <li>(Figure 7) - Wikipedia Contributors (2019). Pratt & Whitney J58. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Pratt_%26_Whitney_J58.</li>
     </ul>
   </details>
   <hr>
@@ -145,12 +426,18 @@
   <h3 id="Managing Heat and Stress">Managing Heat and Stress</h3>
   <p class="ex1">
    Sustained Mach 3 flight.determined constant thermal stress to the airframe. Friction heat was transferred through titanium skin, fuel lines, and control systems. The aircraft's environmental system routed heat from hydraulics and electronics around into the fuel before delivering it to the engines and used the fuel as a liquid heat sink.(Lockheed Martin, n.d)<br><br>
-   NASA flight data took skin temperatures over 500 °C, huge thermal gradients generating complex patterns of expansion along the fuselage.(NASA, 2009) Hot high-temperature fluids and special lubricants kept moving parts functioning, and fully pressurized suits evolved from space-battered equipment kept pilots safe from cockpit temperatures in excess.     
+   NASA flight data took skin temperatures over 260 °C, huge thermal gradients generating complex patterns of expansion along the fuselage.(NASA, 2009) Hot high-temperature fluids and special lubricants kept moving parts functioning, and fully pressurized suits evolved from space-battered equipment kept pilots safe from cockpit temperatures in excess.     
   </p>
+     <figure class="figure-M" aria-hidden="false">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*p5slN9KAS-Q5wzo1VHpeSQ.jpeg" alt="SR-71 Blackbird">
+  <figcaption>Figure 8: Shows the skin temprature of the SR-71 while in flight at Mach 3.2</figcaption>
+</figure>
    <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrance</li>
+      <li>(Lockheed Martin, n.d)Lockheed Martin (2018). Creating the Blackbird. [online] Lockheed Martin. Available at: https://www.lockheedmartin.com/en-us/news/features/history/blackbird.html.</li>
+      <li>(NASA)Merlin, P. (2009). Design and Development of the Blackbird: Challenges and Lessons Learned. [online] Available at: https://ntrs.nasa.gov/api/citations/20090007797/downloads/20090007797.pdf.</li>
+      <li>(Figure 8) - Raj, S. (2020). THE BRILLIANCE OF LOCKHEED’S SR-71. [online] Medium. Available at: https://sanujraj.medium.com/brilliance-of-lockheeds-sr-71-bc3e7b9cbf48</li>
     </ul>
   </details>
   <hr>
@@ -164,7 +451,9 @@
       <details style="margin: 10px 0 20px 0;">
     <summary style="font-weight: bold; cursor: pointer;">References</summary>
     <ul>
-      <li>Refrence</li>
+      <li>(NASA Facts)NASA Facts (2000). SR-71 Blackbird. [online] Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf.</li>
+      <li>(Lockheed Martin, n.d)Lockheed Martin (2018). Creating the Blackbird. [online] Lockheed Martin. Available at: https://www.lockheedmartin.com/en-us/news/features/history/blackbird.html.</li>
+      <li>(NASA)Merlin, P. (2009). Design and Development of the Blackbird: Challenges and Lessons Learned. [online] Available at: https://ntrs.nasa.gov/api/citations/20090007797/downloads/20090007797.pdf.</li>
     </ul>
   </details>
   <hr>
@@ -185,7 +474,95 @@
    <li>(NASA Facts)NASA Facts (2000). SR-71 Blackbird. [online] Available at: https://www.nasa.gov/wp-content/uploads/2021/09/495839main_fs-030_sr-71.pdf.</li>
    <li>(The Genesis of the J58 Engine)Ricco, P. (1964). The heart of the SR-71 ‘Blackbird’ : The mighty J58 engine. [online] Available at: http://aerostories2.free.fr/acrobat/technique/J58/J58A_genesis_eng.pdf.</li>
    <li>(Engine History Society)Enginehistory.org. (2013). Available at: https://www.enginehistory.org/Convention/2013/SR-71Propul/SR-71Propul.shtml.</li>
+   <li>(Figure 1/4) - Wikipedia Contributors (2019). Lockheed SR-71 Blackbird. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird.</li>
+   <li>(Figure 2) - Wikipedia. (2020). Lockheed A-12. [online] Available at: https://en.wikipedia.org/wiki/Lockheed_A-12.</li>
+   <li>(Figure 3) - Wikipedia. (2023). Lockheed YF-12. [online] Available at: https://en.wikipedia.org/wiki/Lockheed_YF-12.</li>
+   <li>(Figure 5) - Wikipedia Contributors (2019). Lockheed SR-71 Blackbird. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Lockheed_SR-71_Blackbird.</li>
+   <li>(Figure 6) - wisconsinmetaltech.com. (n.d.). Titanium and the SR-71 | a Full Guide to an Amazing Combination. [online] Available at: https://wisconsinmetaltech.com/titanium-and-the-sr-71/.</li>
+   <li>(Figure 7) - Wikipedia Contributors (2019). Pratt & Whitney J58. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Pratt_%26_Whitney_J58.</li>
+   <li>(Figure 8) - Raj, S. (2020). THE BRILLIANCE OF LOCKHEED’S SR-71. [online] Medium. Available at: https://sanujraj.medium.com/brilliance-of-lockheeds-sr-71-bc3e7b9cbf48</li>
   </ul>
   </p>
 </body>
 </html>
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Last commit time display -->
+<div id="last-updated">Loading last update time...</div>
+<!-- Verify Button -->
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+</button>
+<script>
+    async function getLastUpdatedTime() {
+        const username = 'nr0025';
+        const repo = 'FY0025';
+       
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            }
+            const commits = await response.json();
+            if (commits && commits.length > 0) {
+                const lastCommitDate = new Date(commits[0].commit.committer.date);
+               
+                // Displaying the time on load
+                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+            } else {
+                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        }
+    }
+    // Function to verify the last update time by re-fetching it from the API
+    async function verifyLastUpdatedTime() {
+        document.getElementById('last-updated').innerText = 'Verifying...';
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from GitHub API.");
+    }
+    // Initial load to display the time on page load
+    window.onload = getLastUpdatedTime;
+</script>
+
+
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
