@@ -483,10 +483,7 @@
    <li>(Figure 8) - Raj, S. (2020). THE BRILLIANCE OF LOCKHEED’S SR-71. [online] Medium. Available at: https://sanujraj.medium.com/brilliance-of-lockheeds-sr-71-bc3e7b9cbf48</li>
   </ul>
   </p>
-</body>
-</html>
-
-
+  
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -498,8 +495,8 @@
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'FEPSFY6924458';
-        const repo = 'FY6924458';
+        const username = 'nr0025';
+        const repo = 'FY0025';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -558,22 +555,16 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const WhyItWasMadeCount = displayWordCount("WhyItWasMade_InText");
-    const FromOXCARTtotheBlackbird = displayWordCount("From OXCART to the Blackbird_InText")
-    const AerodynamicDesign = displayWordCount("Aerodynamic Design_InText")
-    const MaterialsandStructure = displayWordCount("Materials and Structure_InText")
-    const PropulsionTheJ58Engine = displayWordCount("Propulsion: The J58 Engine_InText")
-    const ManagingHeatandStress = displayWordCount("Managing Heat and Stress_InText")
-    const PerformanceandLegacy = displayWordCount("Performance and Legacy_InText")
-    const Conclusion = displayWordCount("Conclusion_InText")
+    const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + WhyItWasMadeCount + FromOXCARTtotheBlackbirdCount + AerodynamicDesignCount + MaterialsandStructureCount + PropulsionTheJ58EngineCount + ManagingHeatandStressCount + PerformanceandLegacyCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+</body>
+</html>
 
