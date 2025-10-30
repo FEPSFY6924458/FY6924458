@@ -331,7 +331,7 @@
   </details>
   <hr>
 
-  <h3 id="From OXCART to the Blackbird">From OXCART to the Blackbird</h3>
+  <h3 id="FromOXCARTtotheBlackbird">From OXCART to the Blackbird</h3>
   <p class="ex1">
      Under Project OXCART of the CIA, Lockheed started work on the A-12(Figure 2) in 1959 the SR-71's direct predecessor. With every prototype, the airframe's shape and structure became tighter to reduce drag and radar cross-section. This led to the design of twin engine pods, lengthy body, and distinctive chines fusing the wing and fuselage of the Blackbird's characteristic look.(Lockheed Martin, n.d : NASA Facts FS-2000-03-030)<br><br>
      The Air Force's SR-71(Figure 4) evolved from the interceptor YF-12(Figure 3) and A-12, built with long-range reconnaissance and advanced sensors. Its airframe merged aerodynamics with materials adequate to sustain flight Mach 3, a configuration no operational aircraft had yet attained.(NASA, 2009)
@@ -370,7 +370,7 @@
   </details>
   <hr>
 
-  <h3 id="Aerodynamic Design">Aerodynamic Design</h3>
+  <h3 id="AerodynamicDesign">Aerodynamic Design</h3>
   <p class="ex1">
    Every curve of the SR-71 was managed by high Mach aerodynamics. The extensively swept delta wings were to minimize drag and stability in the thin stratosphere. The chines(Figure 5) on the fuselage knife edge extensions on the forward body generated extra lift and improved directional stability, decreasing general wing loading by almost 20 percent.(NASA Facts FS-2000-03-030)<br><br>
    The most distinctive feature was the variable geometry inlet system. Behind each J58 engine was a conical movable spike(Figure 5) that traveled 26 inches with a change in velocity, controlling shock wave patterns and slowing the flow before it reached the compressor. At Mach 3, about 54 percent of total thrust wasn't produced by the turbojet core but by compression within the inlet itself.(NASA Facts FS-2000-03-030)
@@ -388,7 +388,7 @@
   </details>
   <hr>
 
-  <h3 id="Materials and Structure">Materials and Structure</h3>
+  <h3 id="MaterialsandStructure">Materials and Structure</h3>
   <p class="ex1">
    A speed of Mach 3 generated skin temperatures of more than 500 °C too hot for aluminum. Lockheed therefore built more than 90 percent of the airframe of titanium alloys(Figure 6), creating one of the first mass-produced aviation titanium structures.(Lockheed Martin, n.d)<br><br>
    Titanium processing was notoriously difficult. It became brittle if exposed to shop equipment in the presence of contaminants, so new welding and cutting techniques were required to be developed by Lockheed. Even the purchase of the material was classified since the Soviet Union was the world leader in its provision, and titanium was thus obtained through third-party sources.<br><br>
@@ -408,7 +408,7 @@
   </details>
   <hr>
 
-  <h3 id="Propulsion: The J58 Engine">Propulsion: The J58 Engine</h3>
+  <h3 id="PropulsionTheJ58Engine">Propulsion: The J58 Engine</h3>
   <p class="ex1">
    Around which the Blackbird's flight was enabled was the Pratt & Whitney J58 (JT11D-20) engine, a bit of a hybrid turbojet and ramjet. Below subsonic speeds it was a standard afterburning turbojet, but above Mach 2 the majority of the air was bypassed around the compressor through six external ducts(Figure 7) and burned with fuel in the afterburner. This yielded efficient high speed thrust while providing steady combustion.(Engine History Society, 2013 : J58 Genesis, 1964)<br><br>
    Cruise generated just 20 percent of the power from the central engine; the rest from compression in the intake and afterburning of bypass flow.(J58 Genesis, 1964)Bleed doors and the inlet spike were controlled automatically(Figure 7) to keep internal shock in precisely the correct location; if this was disrupted, an "unstart" would wrack the aircraft violently about.(Engine History Society, 2013)<br><br>
@@ -423,7 +423,7 @@
   </details>
   <hr>
 
-  <h3 id="Managing Heat and Stress">Managing Heat and Stress</h3>
+  <h3 id="ManagingHeatandStress">Managing Heat and Stress</h3>
   <p class="ex1">
    Sustained Mach 3 flight.determined constant thermal stress to the airframe. Friction heat was transferred through titanium skin, fuel lines, and control systems. The aircraft's environmental system routed heat from hydraulics and electronics around into the fuel before delivering it to the engines and used the fuel as a liquid heat sink.(Lockheed Martin, n.d)<br><br>
    NASA flight data took skin temperatures over 260 °C, huge thermal gradients generating complex patterns of expansion along the fuselage.(NASA, 2009) Hot high-temperature fluids and special lubricants kept moving parts functioning, and fully pressurized suits evolved from space-battered equipment kept pilots safe from cockpit temperatures in excess.     
@@ -442,7 +442,7 @@
   </details>
   <hr>
   
-  <h3 id="Performance and Legacy">Performance and Legacy</h3>
+  <h3 id="PerformanceandLegacy">Performance and Legacy</h3>
   <p class="ex1">
     The SR-71 flew on a routine basis at Mach 3.2 and above 80,000 feet (NASA Facts FS-2000-03-030). With refueling in flight, range was limited only by crew tolerance. No interceptor or missile ever caught up to it; the aircraft's best defense was to out-climb and out-run.(Lockheed Martin n.d)<br><br>
     NASA then flew several SR-71s on hypersonic aerodynamics, propulsion, and atmospheric sampling research. Data from those missions taught lessons that benefited follow-on hypersonic programs and material research.(NASA, 2009)<br><br>
@@ -496,8 +496,8 @@
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'nr0025';
-        const repo = 'FY0025';
+        const username = 'FEPSFY6924458';
+        const repo = 'FY6924458';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -556,10 +556,18 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract");
+    const IntroductionCount = displayWordCount("Introduction");
+    const WhyItWasMadeCount = displayWordCount("WhyItWasMade");
+    const FromOXCARTtotheBlackbird = displayWordCount("From OXCART to the Blackbird")
+    const AerodynamicDesign = displayWordCount("Aerodynamic Design")
+    const MaterialsandStructure = displayWordCount("Materials and Structure")
+    const PropulsionTheJ58Engine = displayWordCount("Propulsion: The J58 Engine")
+    const ManagingHeatandStress = displayWordCount("Managing Heat and Stress")
+    const PerformanceandLegacy = displayWordCount("Performance and Legacy")
+    const Conclusion = displayWordCount("Conclusion")
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = AbstractCount + IntroductionCount + WhyItWasMadeCount + FromOXCARTtotheBlackbirdCount + AerodynamicDesignCount + MaterialsandStructureCount + PropulsionTheJ58EngineCount + ManagingHeatandStressCount + PerformanceandLegacyCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
